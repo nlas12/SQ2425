@@ -1,7 +1,10 @@
 import numpy as np
 import cv2
-
 from PIL import Image, ImageDraw, ImageFont
+
+import sys
+import os
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from paz.pipelines import MiniXceptionFER
 
 # Initialize emotion classifier
